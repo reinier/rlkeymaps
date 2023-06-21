@@ -7,5 +7,7 @@ Clone repo and setup sub modules:
 - git submodule add https://github.com/GEIGEIGEIST/qmk-config-totem.git
 - git submodule update --init --recursive
 
-`make all` to build keymaps
-`make clean` to clean up repo before committing
+## Building keymaps
+
+- `make all` to build keymaps
+- `make clean` to clean up repo before committing
