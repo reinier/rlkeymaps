@@ -1,0 +1,8 @@
+#pragma once
+
+#define ONESHOT_TAP_TOGGLE 2
+
+#undef ONESHOT_TIMEOUT
+#define ONESHOT_TIMEOUT 2000
+
+#define TAPPING_TOGGLE 1
