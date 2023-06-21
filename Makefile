@@ -12,7 +12,6 @@ $(KEYBOARDS):
 	# init submodule
 	git submodule update --init --recursive
 	git submodule update --remote
-	# git submodule foreach make git-submodule 
 
 	# cleanup old symlinks
 	rm -rf qmk-config-totem/totem/keymaps/$(USER)
@@ -21,8 +20,8 @@ $(KEYBOARDS):
 	rm -rf qmk_firmware/users/$(USER)
 
 	# add new symlinks
-	ln -s $(shell pwd)/qmk-config-totem/totem qmk_firmware/keyboards/totem
 	ln -s $(shell pwd)/totem qmk-config-totem/totem/keymaps/$(USER)
+	ln -s $(shell pwd)/qmk-config-totem/totem qmk_firmware/keyboards/totem
 	ln -s $(shell pwd)/technik qmk_firmware/keyboards/boardsource/technik_o/keymaps/$(USER)
 	ln -s $(shell pwd)/user qmk_firmware/users/$(USER)
 
