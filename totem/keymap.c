@@ -1,4 +1,8 @@
+#include <stdio.h>
+#include "totem.h"
 #include "reinier.c"
+
+#define LAYOUT_wrapper(...) LAYOUT(__VA_ARGS__)
 
 #define KR_0_EXTRAL KC_TAB
 #define KR_0_EXTRAR KC_ENTER 

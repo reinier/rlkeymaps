@@ -1,0 +1,3 @@
+# Build Options
+
+RGB_MATRIX_DRIVER = WS2812

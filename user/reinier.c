@@ -10,8 +10,6 @@ Inspired by the sixteen/eighteen key keyboard of [Ben Vallack](https://www.youtu
 
 #include QMK_KEYBOARD_H
 
-#include <stdio.h>
-#include "totem.h"
 #include "features/layer_lock.h"
 #include "microhacks.c"
 
@@ -121,6 +119,3 @@ combo_t key_combos[] = {
 
 #define QW18_EXT_LT KC_TRNS, KC_TRNS, KC_SPACE
 #define QW18_EXT_RT QW18_NOBASE_RT
-
-// Define layout_wrapper
-#define LAYOUT_wrapper(...) LAYOUT(__VA_ARGS__)
