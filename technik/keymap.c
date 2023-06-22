@@ -23,7 +23,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     QW18_BASE_L1,  RGB_SPD,        RGB_SPI,   QW18_BASE_R1,
     QW18_BASE_L2,  RGB_SAD,        RGB_SAI,   QW18_BASE_R2,
     QW18_BASE_L3,  RGB_HUD,        RGB_HUI,   QW18_BASE_R3,
-    RGB_TOG, RGB_RMOD, QW18_BASE_LT, RGB_VAD, RGB_VAI, QW18_BASE_RT,   _______,   _______
+    RGB_TOG, RGB_M_B, QW18_BASE_LT, RGB_VAD, RGB_VAI, QW18_BASE_RT,   RGB_RMOD,   RGB_MOD
   ),
 
   [1] = LAYOUT_wrapper(
