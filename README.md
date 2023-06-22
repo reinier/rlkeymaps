@@ -5,6 +5,7 @@ Inspiration for this setup comes from https://medium.com/@patrick.elmquist/separ
 ## Building keymaps
 
 - `make setup` to install the submodules
+- `make refresh` to remove qmk_firmware and reinstall it
 - `make all` to build keymaps conforming to qweighteen standard
 - `make totem` to build one keymap (in this case the totem).
 - `make clean` to clean up repo before committing

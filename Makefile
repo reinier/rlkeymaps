@@ -98,11 +98,29 @@ clean:
 	rm -rf qmk-config-totem/totem/keymaps/$(USER)
 	rm -rf qmk_firmware/keyboards/totem
 	rm -rf qmk_firmware/keyboards/boardsource/technik_o/keymaps/$(USER)
+	rm -rf qmk_firmware/keyboards/keychron/q9/ansi_encoder/keymaps/reinierq9
+	rm -rf qmk_firmware/keyboards/boardsource/microdox/keymaps/reiniermicrodox
+	rm -rf qmk_firmware/keyboards/moonlander/keymaps/reiniermoonlander
 	rm -rf qmk_firmware/users/$(USER)
 	rm -rf ./build/
 	rm -rf ./qmk-config-totem/
 	rm -rf ./qmk_firmware/
 
 setup:
+	git clone --recurse-submodules --remote-submodules https://github.com/qmk/qmk_firmware.git
+	git clone --recurse-submodules --remote-submodules https://github.com/GEIGEIGEIST/qmk-config-totem.git
+
+refresh:
+	rm -rf qmk-config-totem/totem/keymaps/$(USER)
+	rm -rf qmk_firmware/keyboards/totem
+	rm -rf qmk_firmware/keyboards/boardsource/technik_o/keymaps/$(USER)
+	rm -rf qmk_firmware/keyboards/keychron/q9/ansi_encoder/keymaps/reinierq9
+	rm -rf qmk_firmware/keyboards/boardsource/microdox/keymaps/reiniermicrodox
+	rm -rf qmk_firmware/keyboards/moonlander/keymaps/reiniermoonlander
+	rm -rf qmk_firmware/users/$(USER)
+	rm -rf ./build/
+	rm -rf ./qmk-config-totem/
+	rm -rf ./qmk_firmware/
+
 	git clone --recurse-submodules --remote-submodules https://github.com/qmk/qmk_firmware.git
 	git clone --recurse-submodules --remote-submodules https://github.com/GEIGEIGEIST/qmk-config-totem.git
