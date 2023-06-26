@@ -10,6 +10,11 @@ Inspiration for this setup comes from https://medium.com/@patrick.elmquist/separ
 - `make totem` to build one keymap (in this case the totem).
 - `make clean` to clean up repo before committing
 
+## Docker workflow (wip)
+
+- `make setup` to install the submodules
+- `./dodocker.sh` to run docker build process
+
 ## Keyboards
 
 ![My Totem](/images/totem.jpg)
