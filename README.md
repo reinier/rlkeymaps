@@ -6,7 +6,7 @@ Inspiration for this setup comes from https://medium.com/@patrick.elmquist/separ
 
 - `make setup` to install the submodules
 - `make refresh` to remove qmk_firmware and reinstall it
-- `make all` to build keymaps conforming to qweighteen standard
+- `make all` to build keymaps with qweighteen layout
 - `make totem` to build one keymap (in this case the totem).
 - `make clean` to clean up repo before committing
 
@@ -14,6 +14,12 @@ Inspiration for this setup comes from https://medium.com/@patrick.elmquist/separ
 
 - `make setup` to install the submodules
 - `./dodocker.sh` to run docker build process
+
+Currently only builds Q9 keymap.
+
+### Todo
+
+- Add docker flow for Totem, Moonlander, Boardsource Technik and Boardsource Microdox
 
 ## Keyboards
 
