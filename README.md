@@ -10,16 +10,16 @@ Inspiration for this setup comes from https://medium.com/@patrick.elmquist/separ
 - `make totem` to build one keymap (in this case the totem).
 - `make clean` to clean up repo before committing
 
-## Docker workflow (wip)
+## QMK inside Docker workflow
 
 - `make setup` to install the submodules
 - `./dodocker.sh` to run docker build process
 
-Currently only builds Q9 keymap.
+Comment out the keymaps you don't want to build in dodocker.sh. Also tested with OrbStack and works like a charm.
 
 ### Todo
 
-- Add docker flow for Totem, Moonlander, Boardsource Technik and Boardsource Microdox
+- Add docker flow for Moonlander, Technik and Microdox
 
 ## Keyboards
 

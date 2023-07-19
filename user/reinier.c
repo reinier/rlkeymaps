@@ -74,11 +74,11 @@ combo_t key_combos[] = {
 
 // ##### Layer 3 NUM
 
-#define K18_NUM_L1 KC_PLUS, KC_5, KC_6
+#define K18_NUM_L1 KC_PEQL, KC_PLUS, KC_MINUS
 #define K18_NUM_R1 KC_7, KC_8, KC_9
-#define K18_NUM_L2 KC_ASTR, KC_MINUS, KC_0, KC_1
-#define K18_NUM_R2 KC_2, KC_3, KC_4, KC_PEQL
-#define K18_NUM_LT KC_TRNS, KC_COLN
+#define K18_NUM_L2 KC_ASTR, KC_1, KC_2, KC_3
+#define K18_NUM_R2 KC_4, KC_5, KC_6, KC_COLN
+#define K18_NUM_LT KC_TRNS, KC_0
 #define K18_NUM_RT K18_NOBASE_RT
 
 // ##### Layer 4 EXTENDED
