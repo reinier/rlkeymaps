@@ -92,9 +92,9 @@ Inspired by the sixteen/eighteen key keyboard of [Ben Vallack](https://www.youtu
 
 // ##### Layer 5 MOUSE
 
-#define K18_MOUSE_L1 KC_ESC, KC_MS_WH_UP, KC_MS_BTN2
+#define K18_MOUSE_L1 KC_ESC, KC_MS_WH_DOWN, KC_MS_BTN2
 #define K18_MOUSE_R1 KC_CCCV, KC_MS_UP, KC_BSPC
-#define K18_MOUSE_L2 KC_TAB, LCTL_T(KC_DELETE), LALT_T(KC_MS_WH_DOWN), KC_MS_BTN1
+#define K18_MOUSE_L2 KC_TAB, KC_DELETE, KC_MS_WH_UP, KC_MS_BTN1
 #define K18_MOUSE_R2 KC_MS_LEFT, KC_MS_DOWN, KC_MS_RIGHT, KC_ENTER
 #define K18_MOUSE_LT KC_TRNS, KC_SPACE
 #define K18_MOUSE_RT KC_TRNS, TO(0)
