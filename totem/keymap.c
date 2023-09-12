@@ -47,5 +47,12 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 	KC_TRNS,    	QW18_EXT_L3, QW18_EXT_R3,    KC_TRNS,
 					QW18_EXT_LT, QW18_EXT_RT
         
+          ),
+    [5] = LAYOUT_wrapper(
+					QW18_MOUSE_L1, QW18_MOUSE_R1,
+					QW18_MOUSE_L2, QW18_MOUSE_R2,
+	KC_TRNS,    	QW18_MOUSE_L3, QW18_MOUSE_R3,    KC_TRNS,
+					QW18_MOUSE_LT, QW18_MOUSE_RT
+        
           )
 };

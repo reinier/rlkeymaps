@@ -12,6 +12,7 @@ Inspiration for this setup comes from https://medium.com/@patrick.elmquist/separ
 
 ## QMK inside Docker workflow
 
+- `make clean` to clean up repo before committing
 - `make setup` to install the submodules
 - `./dodocker.sh` to run docker build process
 
