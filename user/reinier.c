@@ -19,21 +19,21 @@ Inspired by the sixteen/eighteen key keyboard of [Ben Vallack](https://www.youtu
 
 */
 
-enum combos {
-	CBO_0,
-	CBO_1,
-	COMBO_LENGTH
-};
+// enum combos {
+// 	CBO_0,
+// 	CBO_1,
+// 	COMBO_LENGTH
+// };
 
-uint16_t COMBO_LEN = COMBO_LENGTH;
+// uint16_t COMBO_LEN = COMBO_LENGTH;
 
-const uint16_t PROGMEM combo0[] = { KC_LEFT, KC_DOWN, COMBO_END};
-const uint16_t PROGMEM combo1[] = { KC_CCCV, KC_UP, COMBO_END};
+// const uint16_t PROGMEM combo0[] = { KC_LEFT, KC_DOWN, COMBO_END};
+// const uint16_t PROGMEM combo1[] = { KC_CCCV, KC_UP, COMBO_END};
 
-combo_t key_combos[] = {
-	[CBO_0] = COMBO(combo0, KC_BTN1),
-	[CBO_1] = COMBO(combo1, KC_BTN2),
-};
+// combo_t key_combos[] = {
+// 	[CBO_0] = COMBO(combo0, KC_BTN1),
+// 	[CBO_1] = COMBO(combo1, KC_BTN2),
+// };
 
 // Helpers
 
@@ -90,6 +90,15 @@ combo_t key_combos[] = {
 #define K18_EXT_LT KC_TRNS, KC_SPACE
 #define K18_EXT_RT K18_NOBASE_RT
 
+// ##### Layer 5 MOUSE
+
+#define K18_MOUSE_L1 KC_ESC, KC_MS_WH_UP, KC_MS_BTN2
+#define K18_MOUSE_R1 KC_CCCV, KC_MS_UP, KC_BSPC
+#define K18_MOUSE_L2 KC_TAB, LCTL_T(KC_DELETE), LALT_T(KC_MS_WH_DOWN), KC_MS_BTN1
+#define K18_MOUSE_R2 KC_MS_LEFT, KC_MS_DOWN, KC_MS_RIGHT, KC_ENTER
+#define K18_MOUSE_LT KC_TRNS, KC_SPACE
+#define K18_MOUSE_RT KC_TRNS, TO(0)
+
 // #
 // #
 // #
@@ -134,6 +143,17 @@ combo_t key_combos[] = {
 #define QW18_EXT_L2 K18_EXT_L2, KC_NO
 #define QW18_EXT_R2 KC_NO, K18_EXT_R2
 #define QW18_EXT_L3 QW18_NO_ROW
-#define QW18_EXT_R3 QW18_NO_ROW
+#define QW18_EXT_R3 KC_NO, TO(5), KC_NO, KC_NO, KC_NO // QW18_NO_ROW + switch to mouse layer
 #define QW18_EXT_LT KC_TRNS, K18_EXT_LT
 #define QW18_EXT_RT QW18_NOBASE_RT
+
+// ##### Layer 5 MOUSE
+
+#define QW18_MOUSE_L1 KC_NO, K18_MOUSE_L1, KC_NO
+#define QW18_MOUSE_R1 KC_NO, K18_MOUSE_R1, KC_NO
+#define QW18_MOUSE_L2 K18_MOUSE_L2, KC_NO
+#define QW18_MOUSE_R2 KC_NO, K18_MOUSE_R2
+#define QW18_MOUSE_L3 QW18_NO_ROW
+#define QW18_MOUSE_R3 QW18_NO_ROW
+#define QW18_MOUSE_LT KC_TRNS, K18_MOUSE_LT
+#define QW18_MOUSE_RT K18_MOUSE_RT, KC_TRNS
