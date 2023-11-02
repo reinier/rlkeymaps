@@ -19,40 +19,25 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 
    [1] = LAYOUT_wrapper(
-					QW18_SYM1_L1, QW18_SYM1_R1,
-					QW18_SYM1_L2, QW18_SYM1_R2,
-	KC_TRNS,    	QW18_SYM1_L3, QW18_SYM1_R3,    KC_TRNS,
-					QW18_SYM1_LT, QW18_SYM1_RT
+					QW18_SYM_L1, QW18_SYM_R1,
+					QW18_SYM_L2, QW18_SYM_R2,
+	KC_TRNS,    	QW18_SYM_L3, QW18_SYM_R3,    KC_TRNS,
+					QW18_SYM_LT, QW18_SYM_RT
 
       ),
 
    [2] = LAYOUT_wrapper(
-					QW18_SYM2_L1, QW18_SYM2_R1,
-					QW18_SYM2_L2, QW18_SYM2_R2,
-	KC_TRNS,    	QW18_SYM2_L3, QW18_SYM2_R3,    KC_TRNS,
-					QW18_SYM2_LT, QW18_SYM2_RT
-
-       ),
-
-   [3] = LAYOUT_wrapper(
 					QW18_NUM_L1, QW18_NUM_R1,
 					QW18_NUM_L2, QW18_NUM_R2,
 	KC_TRNS,    	QW18_NUM_L3, QW18_NUM_R3,    KC_TRNS,
 					QW18_NUM_LT, QW18_NUM_RT
 
         ),
-    [4] = LAYOUT_wrapper(
+    [3] = LAYOUT_wrapper(
 					QW18_EXT_L1, QW18_EXT_R1,
 					QW18_EXT_L2, QW18_EXT_R2,
 	KC_TRNS,    	QW18_EXT_L3, QW18_EXT_R3,    KC_TRNS,
 					QW18_EXT_LT, QW18_EXT_RT
-        
-          ),
-    [5] = LAYOUT_wrapper(
-					QW18_MOUSE_L1, QW18_MOUSE_R1,
-					QW18_MOUSE_L2, QW18_MOUSE_R2,
-	KC_TRNS,    	QW18_MOUSE_L3, QW18_MOUSE_R3,    KC_TRNS,
-					QW18_MOUSE_LT, QW18_MOUSE_RT
         
           )
 };

@@ -1,9 +1,8 @@
 USER = reinier
-KEYBOARDS = totem technik
+KEYBOARDS = totem
 
 # keyboard name
 NAME_totem = totem
-NAME_technik = boardsource/technik_o
 
 all: $(KEYBOARDS)
 
@@ -16,13 +15,11 @@ $(KEYBOARDS):
 	# cleanup old symlinks
 	rm -rf qmk-config-totem/totem/keymaps/$(USER)
 	rm -rf qmk_firmware/keyboards/totem
-	rm -rf qmk_firmware/keyboards/boardsource/technik_o/keymaps/$(USER)
 	rm -rf qmk_firmware/users/$(USER)
 
 	# add new symlinks
 	ln -s $(shell pwd)/totem qmk-config-totem/totem/keymaps/$(USER)
 	ln -s $(shell pwd)/qmk-config-totem/totem qmk_firmware/keyboards/totem
-	ln -s $(shell pwd)/technik qmk_firmware/keyboards/boardsource/technik_o/keymaps/$(USER)
 	ln -s $(shell pwd)/user qmk_firmware/users/$(USER)
 
 	# run lint check
@@ -34,7 +31,6 @@ $(KEYBOARDS):
 	# cleanup symlinks
 	rm -rf qmk-config-totem/totem/keymaps/$(USER)
 	rm -rf qmk_firmware/keyboards/totem
-	rm -rf qmk_firmware/keyboards/boardsource/technik_o/keymaps/$(USER)
 	rm -rf qmk_firmware/users/$(USER)
 
 .PHONY: q9
@@ -75,32 +71,11 @@ microdox:
 	# cleanup symlinks
 	rm -rf qmk_firmware/keyboards/boardsource/microdox/keymaps/reiniermicrodox
 
-.PHONY: moonlander
-moonlander:
-
-	# init submodule
-	git submodule update --init --recursive
-	git submodule update --remote
-
-	# cleanup old symlinks
-	rm -rf qmk_firmware/keyboards/moonlander/keymaps/reiniermoonlander
-
-	# add new symlinks
-	ln -s $(shell pwd)/moonlander qmk_firmware/keyboards/moonlander/keymaps/reiniermoonlander
-
-	# run build
-	make BUILD_DIR=$(shell pwd)/build -j1 -C qmk_firmware moonlander:reiniermoonlander
-
-	# cleanup symlinks
-	rm -rf qmk_firmware/keyboards/moonlander/keymaps/reiniermoonlander
-
 clean:
 	rm -rf qmk-config-totem/totem/keymaps/$(USER)
 	rm -rf qmk_firmware/keyboards/totem
-	rm -rf qmk_firmware/keyboards/boardsource/technik_o/keymaps/$(USER)
 	rm -rf qmk_firmware/keyboards/keychron/q9/ansi_encoder/keymaps/reinierq9
 	rm -rf qmk_firmware/keyboards/boardsource/microdox/keymaps/reiniermicrodox
-	rm -rf qmk_firmware/keyboards/moonlander/keymaps/reiniermoonlander
 	rm -rf qmk_firmware/users/$(USER)
 	rm -rf ./build/
 	rm -rf ./qmk-config-totem/
@@ -113,10 +88,8 @@ setup:
 refresh:
 	rm -rf qmk-config-totem/totem/keymaps/$(USER)
 	rm -rf qmk_firmware/keyboards/totem
-	rm -rf qmk_firmware/keyboards/boardsource/technik_o/keymaps/$(USER)
 	rm -rf qmk_firmware/keyboards/keychron/q9/ansi_encoder/keymaps/reinierq9
 	rm -rf qmk_firmware/keyboards/boardsource/microdox/keymaps/reiniermicrodox
-	rm -rf qmk_firmware/keyboards/moonlander/keymaps/reiniermoonlander
 	rm -rf qmk_firmware/users/$(USER)
 	rm -rf ./build/
 	rm -rf ./qmk-config-totem/
