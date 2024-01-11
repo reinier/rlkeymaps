@@ -21,8 +21,8 @@ cd ./qmk_firmware/
 
 # run builds
 # comment out keyboards that you don't want to build
-# bash util/docker_build.sh keychron/q9/ansi_encoder:reinierq9
-bash util/docker_build.sh totem:reinier
+bash util/docker_build.sh keychron/q9/ansi_encoder:reinierq9
+# bash util/docker_build.sh totem:reinier
 
 # cleanup symlinks
 cd ../
